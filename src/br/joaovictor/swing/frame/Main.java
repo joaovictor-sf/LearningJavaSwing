@@ -1,4 +1,4 @@
-package frames;
+package br.joaovictor.swing.frame;
 
 public class Main {
     public static void main(String[] args) {
