@@ -1,2 +1,7 @@
-package br.joaovictor.swing.selectfile;public class Main {
+package br.joaovictor.swing.selectfile;
+
+public class Main {
+    public static void main(String[] args) {
+        new MyFrame();
+    }
 }

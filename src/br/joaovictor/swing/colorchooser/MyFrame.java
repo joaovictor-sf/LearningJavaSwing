@@ -1,22 +1,29 @@
-package br.joaovictor.swing.selectfile;
+package br.joaovictor.swing.colorchooser;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 
 public class MyFrame extends JFrame implements ActionListener {
     JButton button;
+    JLabel label;
 
     public MyFrame() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
-        button = new JButton("Select File");
+        button = new JButton("Pick a color");
         button.addActionListener(this);
 
+        label = new JLabel();
+        label.setBackground(Color.white);
+        label.setText("this is the text");
+        label.setFont(new Font("MV Boli", Font.PLAIN, 100));
+        label.setOpaque(true);
+
         this.add(button);
+        this.add(label);
         this.pack();
         this.setVisible(true);
     }
@@ -24,19 +31,11 @@ public class MyFrame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button){
-            JFileChooser fileChooser = new JFileChooser();
+            JColorChooser colorChooser = new JColorChooser();
 
-            //Set current directory
-            //"." will go to the project folder
-            fileChooser.setCurrentDirectory(new File("C:\\Users\\User\\Desktop"));
+            Color color = JColorChooser.showDialog(null, "Pick a color", Color.black);
 
-            //int response = fileChooser.showOpenDialog(null);//select file to open
-            int response2 = fileChooser.showSaveDialog(null);//Select file to save
-
-            if (response2 == JFileChooser.APPROVE_OPTION){
-                File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
-                System.out.println(file);
-            }
+            label.setForeground(color);
         }
     }
 }

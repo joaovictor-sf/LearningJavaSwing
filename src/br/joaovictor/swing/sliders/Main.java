@@ -1,4 +1,4 @@
-package br.joaovictor.slider;
+package br.joaovictor.swing.sliders;
 
 public class Main {
 

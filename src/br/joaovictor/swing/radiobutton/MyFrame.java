@@ -1,4 +1,4 @@
-package radioButton;
+package br.joaovictor.swing.radiobutton;
 
 import java.awt.FlowLayout;
 import java.awt.HeadlessException;

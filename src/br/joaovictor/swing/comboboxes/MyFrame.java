@@ -1,7 +1,6 @@
-package br.joaovictor.swing.radiobuttons;
+package br.joaovictor.swing.comboboxes;
 
 import java.awt.FlowLayout;
-import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

@@ -1,4 +1,4 @@
-package br.joaovictor.swing.menubar;
+package br.joaovictor.swing.keylistener;
 
 public class Main {
     public static void main(String[] args) {

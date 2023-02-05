@@ -1,4 +1,4 @@
-package radioButton;
+package br.joaovictor.swing.radiobutton;
 
 public class Main {
 

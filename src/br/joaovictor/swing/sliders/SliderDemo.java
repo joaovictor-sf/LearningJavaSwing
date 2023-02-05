@@ -1,4 +1,4 @@
-package br.joaovictor.slider;
+package br.joaovictor.swing.sliders;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -19,6 +19,7 @@ public class SliderDemo implements ChangeListener {
 	
 	public SliderDemo() {
 		frame = new JFrame("Slider Demo");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		label = new JLabel();
 		panel = new JPanel();
 		slider = new JSlider(0, 100, 50);

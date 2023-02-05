@@ -1,4 +1,4 @@
-package br.joaovictor.swing.radiobuttons;
+package br.joaovictor.swing.comboboxes;
 
 public class Main {
 
